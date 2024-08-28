@@ -1,0 +1,345 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #007BFF;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f8f9fa;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+.primary-btn, .secondary-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.primary-btn {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#projects {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.project p {
+    margin: 0 0 15px;
+    color: #6c757d;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+#experience {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#experience .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#experience img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+#experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#experience ul li {
+    margin-bottom: 20px;
+}
+
+#experience h2 {
+    text-align: center;
+}
+
+#experience h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.skills-list i {
+    font-size: 50px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.skills-list i:hover {
+    color: #007BFF;
+}
+
+.skills-list div {
+    text-align: center;
+}
+
+.skills-list span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#contact .primary-btn {
+    background-color: #fff;
+    color: #007BFF;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d33d6;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.primary-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+
+#contactForm {
+    display: none; /* Hidden by default */
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contactForm textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#contactForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .project-list {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .skills-list {
+        gap: 20px;
+    }
+
+    .skills-list i {
+        font-size: 40px;
+    }
+
+    #experience .row {
+        text-align: center;
+    }
+
+    #experience h2, #experience h3 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
